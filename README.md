@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://pic.17qq.com/uploads/gwghfmwqwy.jpeg"></a>
+ <img width=200px height=200px src="https://photo.mac69.com/180813/EPS-180813_160/nGoWEqeWGU_small.jpg"></a>
 </p>
 
 <h3 align="center">:koala: Pet store data warehouse :baby_chick:</h3>
@@ -35,6 +35,8 @@
 
 ## 🧐 About <a name = "about"></a>
 Write about 1-2 paragraphs describing the purpose of your project.
+
+![working](https://media.giphy.com/media/efCS5REFGnkl66tWtb/giphy.gif)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
