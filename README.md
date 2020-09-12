@@ -6,99 +6,98 @@
 </p>
 <h3 align="center">:koala: Pet store data warehouse :baby_chick:</h3>
 
-<div align="center">
-
-  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> PetStore wants to make all the data accessible to all users to increase visibility across different functions and business processes. Need to integrate all databases from different departments to create an Enterprise Data Warehouse for PetStore.
     <br> 
 </p>
 
 ## 📝 Table of Contents
 - [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Create Business Matrix](#business_matrix)
+- [SSIS for Superset](#superset)
+- [Database Diagram](#database_diagram)
+- [SSAS for OLAP](#olap)
+- [MDX query ](#mdx_query)
+- [Conclusion](#conclusion)
 
 ## 🧐 About <a name = "about"></a>
-Write about 1-2 paragraphs describing the purpose of your project.
 
-![working](https://media.giphy.com/media/efCS5REFGnkl66tWtb/giphy.gif)
 
-## 🏁 Getting Started <a name = "getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+![working](https://media.giphy.com/media/h8mSIeTWzDFooj3hgT/giphy.gif)
+
 
 ### Prerequisites
-What things you need to install the software and how to install them.
+SQL, Excel, SSIS, SSAS
 
-```
-Give examples
-```
+## 🐶 Create Business Matrix <a name = "business_matrix"></a>
+Created a business matrix based on the tables that PetStore provided and found out the following things:
+1. Dimensions tables
+2. Fact table
+3. Conformed dimensions table
 
-### Installing
-A step by step series of examples that tell you how to get a development env running.
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/1.PNG)
 
-Say what the step will be
 
-```
-Give the example
-```
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/2.PNG)
 
-And repeat
 
-```
-until finished
-```
+Created schema for two conformed tables and date table:
 
-End with an example of getting some data out of the system or using it for a little demo.
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/3.PNG)
 
-## 🔧 Running the tests <a name = "tests"></a>
-Explain how to run the automated tests for this system.
 
-### Break down into end to end tests
-Explain what these tests test and why
 
-```
-Give an example
-```
 
-### And coding style tests
-Explain what these tests test and why
 
-```
-Give an example
-```
 
-## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
+## 🐱 SSIS for Superset <a name="superset"></a>
 
-## 🚀 Deployment <a name = "deployment"></a>
-Add additional notes about how to deploy this on a live system.
+Used SSIS to merge and join the two Supplier tables into one superset:
 
-## ⛏️ Built Using <a name = "built_using"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/5.png)
 
-## ✍️ Authors <a name = "authors"></a>
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/6.png)
+
+
+Used SSIS to merge and join the two Merchandise tables into one superset:
+
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/7.png)
+
+
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/8.png)
+
+
+
+## 🐰 Database Diagram <a name = "database_diagram"></a>
+
+After populating the data, generated Database Digram for OLAP purpose:
+
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/4.png)
+
+
+
+## 🐴 SSAS for OLAP <a name = "olap"></a>
+
+Used SSAS to created cube structures and dimensional usages:
+
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/9.png)
+
+
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/10.png)
+
+
+## 🐺 MDX query <a name = "mdx_query"></a>
+
+After the cube generated, MDX can be used for calculations and extracting needed data:
+
+![image](https://github.com/YingHu1234/PetStore/blob/master/img/11.png)
+
+
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+## 🎉 Conclusion <a name = "conclusion"></a>
+In a word, it is very useful for employees from each department to avoid delayed inter-departmental communication by creating a data warehouse.
