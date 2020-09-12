@@ -2,9 +2,8 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://photo.mac69.com/180813/EPS-180813_160/nGoWEqeWGU_small.jpg"></a>
+ <img width=200px height=200px src="http://pic.90sjimg.com/design/01/39/53/98/5949e1799d5af.png"></a>
 </p>
-
 <h3 align="center">:koala: Pet store data warehouse :baby_chick:</h3>
 
 <div align="center">
