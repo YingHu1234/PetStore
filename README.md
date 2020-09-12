@@ -24,6 +24,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
+The standalone databases mostly perform functions for their own departments, in order to save the time of retrieving data from multiple sources, a data warehouse which is a multi-dimensional database can help to store large historical data. 
 
 ![working](https://media.giphy.com/media/h8mSIeTWzDFooj3hgT/giphy.gif)
 
