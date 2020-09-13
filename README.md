@@ -30,7 +30,7 @@ The standalone databases mostly perform functions for their own departments, in 
 
 
 ### Prerequisites
-SQL, Excel, SSIS, SSAS
+SQL, Excel, SQL Server Integration Services(SSIS), SQL Server Analysis Services(SSAS)
 
 ## 🐶 Create Business Matrix <a name = "business_matrix"></a>
 Created a business matrix based on the tables that PetStore provided and found out the following things:
@@ -94,11 +94,11 @@ Used SSAS to created cube structures and dimensional usages:
 
 After the cube generated, MDX can be used for calculations and extracting needed data:
 
+Display the animal sale price, sales tax, merchandise sale amount, and customer balance for each customer. 
+
 ![image](https://github.com/YingHu1234/PetStore/blob/master/img/11.png)
 
 
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
 ## 🎉 Conclusion <a name = "conclusion"></a>
 In a word, it is very useful for employees from each department to avoid delayed inter-departmental communication by creating a data warehouse.
