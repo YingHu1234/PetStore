@@ -24,7 +24,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-The standalone databases mostly perform functions for their own departments, in order to save the time of retrieving data from multiple sources, a data warehouse which is a multi-dimensional database can help to store large historical data. 
+PetStore is a nationwide seller of pets. There are standalone databases and mostly perform functions for their own departments of animal supply, merchandise supply, customer order with delayed inter-departmental communications. PetStore wants to make all the data accessible to all users to increase visibility across different functions and business processes.
 
 ![working](https://media.giphy.com/media/h8mSIeTWzDFooj3hgT/giphy.gif)
 
